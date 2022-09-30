@@ -5,7 +5,7 @@ import Wrapper from "../component/Wrapper";
 
 const HomePage = () => {
   return (
-    <Container>
+    <Container fluid className="p-0">
       <Header />
       <Wrapper />
     </Container>
