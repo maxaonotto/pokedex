@@ -6,7 +6,7 @@ const PokemonItem = ({ data }) => {
   return (
     <Col
       style={{ width: "175px" }}
-      className="col-xs-7 col-sm-5 col-md-4 col-lg-4 col-xl-3 col-xxl-2 my-2"
+      className="px-2 mb-2 col-xs-7 col-sm-5 col-md-4 col-lg-4 col-xl-3 col-xxl-2"
     >
       <Card className="p-2 h-100 w-100 text-center border-dark rounded-0">
         <Card.Img variant="top" src={pokeball} />
