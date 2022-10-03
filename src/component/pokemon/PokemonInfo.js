@@ -4,9 +4,15 @@ import pokeball from "../../assets/pokeball.png";
 
 const PokemonInfo = () => {
   return (
-    <Col style={{ width: "35%" }} className="m-auto">
+    <Col>
       <Card className="p-3 border-dark rounded-0">
-        <Card.Img variant="top" src={pokeball} />
+        <Card.Img
+          variant="top"
+          src={pokeball}
+          style={{ width: "200px" }}
+          height="200px"
+          className="m-auto"
+        />
         <Card.Body className="p-0 text-center text-capitalize">
           <Card.Title className="mt-2 fw-bold">name</Card.Title>
           <Table bordered className="m-auto border-dark">
