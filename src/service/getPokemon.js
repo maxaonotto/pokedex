@@ -3,13 +3,9 @@ import axios from "axios";
 const pokemonUrl = "https://pokeapi.co/api/v2/pokemon";
 
 export const getPokemonList = () => {
-  return axios.get(pokemonUrl);
+  return axios.get(`${pokemonUrl}/?limit=12`);
 };
 
-export const getPokemonId = (id) => {
-  return axios.get(`${pokemonUrl}/${id}`);
-};
-
-export const getPokemonType = (id) => {
-  return axios.get(`${pokemonUrl}/${id}/types`);
+export const getSinglePokemon = () => {
+  return axios.get(`${pokemonUrl}/${1}`);
 };

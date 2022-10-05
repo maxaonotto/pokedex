@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import { Row } from "react-bootstrap";
-import usePokemonList from "../../hook/usePokemonList";
 import LoadMoreButton from "../button/LoadMoreButton";
 import PokemonItem from "./PokemonItem";
 
-const PokemonList = () => {
-  const [list] = usePokemonList();
-  const [loadMore, setLoadMore] = useState(8);
+const PokemonList = ({ data, pokeInfo }) => {
+  const [loadMore, setLoadMore] = useState(6);
 
   return (
     <Row className="m-auto">
-      {list.slice(0, loadMore).map((pokemon) => (
-        <PokemonItem key={pokemon.name} data={pokemon} />
+      {data.slice(0, loadMore).map((pokemon) => (
+        <PokemonItem key={pokemon.name} data={pokemon} pokeInfo={pokeInfo} />
       ))}
       <LoadMoreButton setLoadMore={setLoadMore} />
     </Row>
