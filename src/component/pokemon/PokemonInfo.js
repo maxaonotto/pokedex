@@ -17,7 +17,9 @@ const PokemonInfo = ({ pokedex }) => {
               className="m-auto"
             />
             <Card.Body className="p-0 text-center text-capitalize">
-              <Card.Title className="mt-2 fw-bold">{pokedex.name}</Card.Title>
+              <Card.Title className="mt-2 fw-bold">
+                {pokedex.name} #0{pokedex.id}
+              </Card.Title>
               <Table bordered className="w-100 m-auto border-dark">
                 <tbody>
                   <tr className="h-100">

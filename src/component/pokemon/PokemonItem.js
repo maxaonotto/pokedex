@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Col, Form } from "react-bootstrap";
+import { setPokemonTypeBg } from "../../util/setPokemonTypeBg";
 
 const PokemonItem = ({ data, pokeInfo }) => {
   return (
@@ -21,8 +22,8 @@ const PokemonItem = ({ data, pokeInfo }) => {
               return (
                 <Form.Label
                   key={poke.slot}
-                  // style={setPokemonTypeBg(poke.type.name)}
-                  className="px-2 py-1 bg-warning"
+                  className={`rounded px-2 py-1 fw-bold 
+                  bg-${setPokemonTypeBg(poke.type.name)}`}
                 >
                   {poke.type.name}
                 </Form.Label>
