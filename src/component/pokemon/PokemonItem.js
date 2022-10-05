@@ -5,7 +5,7 @@ import { setPokemonTypeBg } from "../../util/setPokemonTypeBg";
 const PokemonItem = ({ data, pokeInfo }) => {
   return (
     <Col
-      style={{ width: "225px" }}
+      style={{ width: "225px", cursor:"pointer" }}
       className="m-auto px-2 mb-2 
       col-xs-7 col-sm-5 col-md-4 col-lg-4 col-xl-3 col-xxl-2"
     >
